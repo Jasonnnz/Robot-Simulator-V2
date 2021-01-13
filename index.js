@@ -5,14 +5,14 @@ document.addEventListener("DOMContentLoaded", function() {
   const mainBoard = document.body;
   const ul = document.querySelector('ul#moves-container');
   const btn = document.querySelector('div#control-panel button#move-button');
-  const ulArr = [];
+  // const ulArr = [];
 
   function createLiElem(move) {
     const li = document.createElement('li');
     li.dataset.movement = "movement";
     li.textContent = move;
     ul.append(li);
-    ulArr.push(li);
+    // ulArr.push(li);
   }
 
   mainBoard.addEventListener('keydown', function(e){
